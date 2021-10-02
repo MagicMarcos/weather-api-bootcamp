@@ -9,9 +9,9 @@ function getFetch() {
 	let city = input.value;
 	let url = '';
 	if (country === 'US') {
-		url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=c730d46ff6ea01d455670cb5e00a6c5c`;
+		url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=APIKEY`;
 	} else {
-		url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=c730d46ff6ea01d455670cb5e00a6c5c`;
+		url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=APIKEY`;
 	}
 	fetch(url)
 		.then(res => res.json())
